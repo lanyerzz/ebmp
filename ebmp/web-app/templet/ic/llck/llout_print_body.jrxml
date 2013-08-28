@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cgin_print_body" language="groovy" pageWidth="651" pageHeight="357" orientation="Landscape" columnWidth="651" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="0d0cdc0d-b2d4-43f2-ad2c-5d8300225c6e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="cwarehouse" class="java.lang.Object"/>
+	<field name="nprice" class="java.math.BigDecimal"/>
+	<field name="nmny" class="java.math.BigDecimal"/>
+	<field name="noutNum" class="java.math.BigDecimal"/>
+	<field name="bdInvmandoc.pkInvbasdoc.bdmeasdoc.measname" class="java.lang.String"/>
+	<field name="bdInvmandoc.pkInvbasdoc.invspec" class="java.lang.String"/>
+	<field name="bdInvmandoc.pkInvbasdoc.invtype" class="java.lang.String"/>
+	<field name="bdInvmandoc.pkInvbasdoc.invname" class="java.lang.String"/>
+	<field name="vnotebody" class="java.lang.String"/>
+	<field name="nshouldoutNum" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="18">
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d766d9d8-6520-46d6-9765-fa9cce580385" x="374" y="0" width="43" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noutNum}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="14ff43e0-a172-4483-a60f-2a6afed63f18" x="169" y="0" width="72" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bdInvmandoc.pkInvbasdoc.invspec} ? $F{bdInvmandoc.pkInvbasdoc.invspec}+" ":"" + $F{bdInvmandoc.pkInvbasdoc.invtype}?$F{bdInvmandoc.pkInvbasdoc.invtype}:""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c9d1f81c-802d-4b52-9354-dd771f92f043" x="421" y="0" width="42" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nprice}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="236dbab2-a75d-4c74-a2dc-8c1596a47b87" x="327" y="0" width="44" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nshouldoutNum}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9f186926-2eb5-4b12-b231-1178b5255013" x="588" y="0" width="63" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{vnotebody}?:""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0e745af1-9b0c-4700-a487-1f54849851a2" x="290" y="0" width="34" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bdInvmandoc.pkInvbasdoc.bdmeasdoc.measname}?:""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="aa4ebecf-235b-440c-9460-65c4e941760a" x="250" y="0" width="40" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b06082a8-50c9-453d-97b7-753b54a94b0a" x="74" y="0" width="95" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bdInvmandoc.pkInvbasdoc.invname}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="05d3ecaa-552c-4a70-8d3c-1b9de4b506df" x="465" y="0" width="38" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nmny}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

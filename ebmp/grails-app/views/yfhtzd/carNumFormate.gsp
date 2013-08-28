@@ -1,0 +1,1 @@
+<g:if test="${cars}">请以下车辆入库\n</g:if><g:each in="${cars}" var="c">${c}\n</g:each>

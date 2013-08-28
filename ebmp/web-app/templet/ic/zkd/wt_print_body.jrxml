@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="wt_print_body" language="groovy" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="2c99a1fb-052d-42f2-9a2c-c64c56392e8b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="invmandoc.pkInvbasdoc.invcode" class="java.lang.String"/>
+	<field name="invmandoc.pkInvbasdoc.invname" class="java.lang.String"/>
+	<field name="invmandoc.pkInvbasdoc.invspec" class="java.lang.String"/>
+	<field name="invmandoc.pkInvbasdoc.invtype" class="java.lang.String"/>
+	<field name="batchdoc" class="java.lang.String"/>
+	<field name="num" class="java.lang.String"/>
+	<field name="invmandoc.pkInvbasdoc.bdmeasdoc.measname" class="java.lang.String"/>
+	<field name="note" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="20">
+			<textField>
+				<reportElement uuid="614cc684-132f-4fb8-968f-bf93e96d87c2" x="45" y="0" width="82" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{invmandoc.pkInvbasdoc.invcode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ed6e0352-a012-44fc-b4ae-5e0b82ab3d8f" x="127" y="0" width="77" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{invmandoc.pkInvbasdoc.invname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d8e9cea6-5468-4de0-9c4d-8e0ed4a6ef22" x="204" y="0" width="57" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{invmandoc.pkInvbasdoc.invspec}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ef4a5fbf-74c7-4402-b1cd-14f162c1fe72" x="261" y="0" width="63" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{invmandoc.pkInvbasdoc.invtype}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="efc6fe56-3892-4805-aa04-5bfd7c595f5b" x="324" y="0" width="61" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{batchdoc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d5c1f527-a42d-4d11-94fa-c861326db7c6" x="421" y="0" width="60" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{num}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6e3682e9-a95c-48ed-9c0e-db2009489054" x="385" y="0" width="36" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{invmandoc.pkInvbasdoc.bdmeasdoc.measname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5640c847-88f5-45f7-a51c-d40eacc64652" x="481" y="0" width="69" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{note}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

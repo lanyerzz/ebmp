@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="934038146">
+    <data-source source="LOCAL" name="Data Source" product="PostgreSQL" version="9.2.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.0 JDBC4 (build 801)" uuid="54145cc2-9a78-4885-8734-4374e5ca7826">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.apache.commons.dbcp.PoolingDriver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost/ebmp</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>df9bdf98df99df9bdf98df99dfcb</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

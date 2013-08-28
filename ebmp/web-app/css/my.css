@@ -1,0 +1,169 @@
+/* CREATE/EDIT FORMS AND SHOW PAGES */
+ a {
+    text-decoration: none;
+     color: #808080;
+}
+
+ a:link, th a:visited {
+    color: #808080;
+}
+
+ a:hover, th a:focus {
+    color: #808080;
+}
+
+fieldset,
+.property-list {
+    margin: 0.6em 1.25em 0 1.25em;
+    padding: 0.3em 1.8em 1.25em;
+    position: relative;
+    zoom: 1;
+    border: none;
+}
+
+.property-list .fieldcontain {
+    list-style: none;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.fieldcontain {
+    margin-top:3px ;
+
+    display: inline-table;
+
+    background:#f4f0ff;
+}
+
+.fieldcontain-fat {
+    /*margin-top: ;*/
+    margin-top:3px;
+    display: inline-table;
+
+    background:#f4f0ff;
+
+}
+
+.fieldcontain-fat label,
+.fieldcontain label,
+.fieldcontain .property-label {
+    color: #666666;
+    text-align: right;
+    width: 110px;
+    vertical-align: middle;
+    display: inline-block;
+
+}
+
+.disabled{
+    background: #E6E6E6;
+}
+
+
+[disabled]
+{
+    background: #E6E6E6;
+}
+
+
+
+
+
+select[multiple] {
+    vertical-align: top;
+}
+
+textarea {
+    width: 500px;
+    height: 50px;
+    overflow: auto; /* IE always renders vertical scrollbar without this */
+    vertical-align: top;
+}
+
+input[type=checkbox], input[type=radio] {
+    width: 145px;
+    border-width: 1px;
+}
+
+
+
+
+select {
+    width: 145px;
+
+
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    border-color: #95B8E7;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    overflow: hidden;
+    vertical-align: middle;
+
+    height: 20px;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 0.25em 0 0;
+
+
+}
+
+
+
+input {
+    width: 143px;
+
+
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    border-color: #95B8E7;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    overflow: hidden;
+    vertical-align: middle;
+
+    height: 20px;
+
+}
+
+.myvalidatebox-invalid {
+    /*background-image: url('../images/validatebox_warning.png');*/
+    background-repeat: no-repeat;
+    background-position: right center;
+    border-color: #ffa8a8;
+    background-color: #ffa8a8;
+
+
+}
+
+.panel-tools{
+    height: 28px;
+    background-color: #f1f1f1;
+}
+
+hr{
+
+    border-bottom-style: hidden;
+}
+p{
+
+    color: red;
+    margin-top: 0px;
+
+}
+
+label.required{
+    color: #00438a;
+    font-weight:bold;
+
+}
+

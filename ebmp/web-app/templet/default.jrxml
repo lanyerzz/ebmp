@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="default" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="385c8a19-15c2-4dba-a93a-4ffda2cf04d1">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="354">
+			<staticText>
+				<reportElement uuid="ab72e65e-ec13-4339-b972-24d7e413b329" x="97" y="87" width="359" height="166" forecolor="#FF3300" backcolor="#CCFFCC"/>
+				<textElement>
+					<font size="40"/>
+				</textElement>
+				<text><![CDATA[未找到对应模板！请确认操作节点是否已经分配！]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

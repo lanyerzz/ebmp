@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sub_report" pageWidth="421" pageHeight="595" columnWidth="421" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="8f80c0ce-2101-4256-931c-929c6b4fdbf1">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="attached" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[attached]]></fieldDescription>
+	</field>
+	<field name="batch" class="java.lang.String">
+		<fieldDescription><![CDATA[batch]]></fieldDescription>
+	</field>
+	<field name="bzm" class="com.app.bd.pack.BdPack">
+		<fieldDescription><![CDATA[bzm]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="dateCreated" class="java.util.Date">
+		<fieldDescription><![CDATA[dateCreated]]></fieldDescription>
+	</field>
+	<field name="dconsigndate" class="java.util.Date">
+		<fieldDescription><![CDATA[dconsigndate]]></fieldDescription>
+	</field>
+	<field name="ddeliverdate" class="java.util.Date">
+		<fieldDescription><![CDATA[ddeliverdate]]></fieldDescription>
+	</field>
+	<field name="errors" class="org.springframework.validation.Errors">
+		<fieldDescription><![CDATA[errors]]></fieldDescription>
+	</field>
+	<field name="fjl" class="com.app.bd.measdoc.BdMeasdoc">
+		<fieldDescription><![CDATA[fjl]]></fieldDescription>
+	</field>
+	<field name="frownote" class="java.lang.String">
+		<fieldDescription><![CDATA[frownote]]></fieldDescription>
+	</field>
+	<field name="frowstatus" class="java.lang.Integer">
+		<fieldDescription><![CDATA[frowstatus]]></fieldDescription>
+	</field>
+	<field name="fsl" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[fsl]]></fieldDescription>
+	</field>
+	<field name="head" class="com.app.so.order.SoSale">
+		<fieldDescription><![CDATA[head]]></fieldDescription>
+	</field>
+	<field name="hsl" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[hsl]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="invmandoc" class="com.app.bd.invmandoc.BdInvmandoc">
+		<fieldDescription><![CDATA[invmandoc]]></fieldDescription>
+	</field>
+	<field name="lastUpdated" class="java.util.Date">
+		<fieldDescription><![CDATA[lastUpdated]]></fieldDescription>
+	</field>
+	<field name="linkTel" class="java.lang.String">
+		<fieldDescription><![CDATA[linkTel]]></fieldDescription>
+	</field>
+	<field name="metaClass" class="groovy.lang.MetaClass">
+		<fieldDescription><![CDATA[metaClass]]></fieldDescription>
+	</field>
+	<field name="nnumber" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[nnumber]]></fieldDescription>
+	</field>
+	<field name="noriginalcurmny" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[noriginalcurmny]]></fieldDescription>
+	</field>
+	<field name="noriginalcurnetprice" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[noriginalcurnetprice]]></fieldDescription>
+	</field>
+	<field name="noriginalcurprice" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[noriginalcurprice]]></fieldDescription>
+	</field>
+	<field name="noriginalcursummny" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[noriginalcursummny]]></fieldDescription>
+	</field>
+	<field name="noriginalcurtaxmny" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[noriginalcurtaxmny]]></fieldDescription>
+	</field>
+	<field name="noriginalcurtaxnetprice" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[noriginalcurtaxnetprice]]></fieldDescription>
+	</field>
+	<field name="noriginalcurtaxprice" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[noriginalcurtaxprice]]></fieldDescription>
+	</field>
+	<field name="noutnum" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[noutnum]]></fieldDescription>
+	</field>
+	<field name="ntaxrate" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[ntaxrate]]></fieldDescription>
+	</field>
+	<field name="properties" class="java.util.Map">
+		<fieldDescription><![CDATA[properties]]></fieldDescription>
+	</field>
+	<field name="rowno" class="java.lang.Integer">
+		<fieldDescription><![CDATA[rowno]]></fieldDescription>
+	</field>
+	<field name="sourceBid" class="java.lang.String">
+		<fieldDescription><![CDATA[sourceBid]]></fieldDescription>
+	</field>
+	<field name="sourceBillCode" class="java.lang.String">
+		<fieldDescription><![CDATA[sourceBillCode]]></fieldDescription>
+	</field>
+	<field name="sourceBillType" class="com.app.pub.billtype.PubBilltype">
+		<fieldDescription><![CDATA[sourceBillType]]></fieldDescription>
+	</field>
+	<field name="sourceHid" class="java.lang.String">
+		<fieldDescription><![CDATA[sourceHid]]></fieldDescription>
+	</field>
+	<field name="stordoc" class="com.app.bd.stordoc.BdStordoc">
+		<fieldDescription><![CDATA[stordoc]]></fieldDescription>
+	</field>
+	<field name="version" class="java.lang.Long">
+		<fieldDescription><![CDATA[version]]></fieldDescription>
+	</field>
+	<field name="vfree1" class="java.lang.String">
+		<fieldDescription><![CDATA[vfree1]]></fieldDescription>
+	</field>
+	<field name="vfree2" class="java.lang.String">
+		<fieldDescription><![CDATA[vfree2]]></fieldDescription>
+	</field>
+	<field name="vfree3" class="java.lang.String">
+		<fieldDescription><![CDATA[vfree3]]></fieldDescription>
+	</field>
+	<field name="vfree4" class="java.lang.String">
+		<fieldDescription><![CDATA[vfree4]]></fieldDescription>
+	</field>
+	<field name="vfree5" class="java.lang.String">
+		<fieldDescription><![CDATA[vfree5]]></fieldDescription>
+	</field>
+	<field name="vreceiveaddress" class="java.lang.String">
+		<fieldDescription><![CDATA[vreceiveaddress]]></fieldDescription>
+	</field>
+	<variable name="nmoney_1" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$V{nmoney_1}.add($F{noriginalcursummny})]]></variableExpression>
+		<initialValueExpression><![CDATA[new java.math.BigDecimal("0")]]></initialValueExpression>
+	</variable>
+	<variable name="s_nnumber" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{nnumber}]]></variableExpression>
+	</variable>
+	<variable name="s_nmoney" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{noriginalcursummny}]]></variableExpression>
+	</variable>
+	<variable name="s_fnumber" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{fsl}]]></variableExpression>
+	</variable>
+	<variable name="s_nnumber2" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{nnumber}.setScale(2,BigDecimal.ROUND_DOWN).divide($F{invmandoc}.defaultNumber.setScale(2,BigDecimal.ROUND_DOWN),1)]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="23">
+			<staticText>
+				<reportElement uuid="0185a419-058a-4cf8-8020-4fb92c691ab6" x="0" y="1" width="16" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8bdcef3b-b02a-420f-81aa-2e0e4d15684c" x="18" y="1" width="67" height="22"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[品名]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cdd9ed54-48dc-44ec-82a8-50ba7b21dc5b" x="88" y="1" width="49" height="22"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[双数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f0887403-262d-434b-bb85-ad87d38df693" x="138" y="1" width="47" height="22"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[单价]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0a14cdf3-66db-40e6-b8a6-53515a8a4025" x="189" y="1" width="59" height="22"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[金额]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="ef4075ca-b89a-46a1-862b-a5eeb666a018" x="0" y="0" width="365" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement uuid="0c138ef4-7de9-4914-9def-70a1e3a8554d" x="0" y="22" width="365" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="1f237e02-3bb2-48ad-ad8c-2f6f9c4c5cdc" x="249" y="1" width="28" height="22"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[箱数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b2b73b32-d4e3-44ec-a863-b2811c1593b8" x="289" y="1" width="36" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[备注]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e7f7e178-8e3b-4fd1-b490-547cbaafc379" x="0" y="0" width="18" height="19"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0ea22573-b6c5-4f8f-a89f-857a0845c961" x="18" y="0" width="72" height="19"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{invmandoc}.pkInvbasdoc.invname]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="982224df-d2e4-4f3e-9437-92906257a3b5" x="90" y="0" width="38" height="19"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nnumber}.setScale(0,BigDecimal.ROUND_DOWN).divide($F{invmandoc}.defaultNumber.setScale(1,BigDecimal.ROUND_DOWN),1)+"*"+$F{invmandoc}.defaultNumber.setScale(0,BigDecimal.ROUND_DOWN)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="54396592-b747-4ca4-9802-3d18ae4cd59d" x="246" y="0" width="29" height="19"/>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fsl}.setScale(1,BigDecimal.ROUND_DOWN)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="040da985-a8d7-4512-a068-769f2d4cb064" x="129" y="0" width="49" height="19"/>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noriginalcurtaxprice}.setScale(2,BigDecimal.ROUND_DOWN)]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f0b2e58f-1210-44c9-b864-4ffa96c21e89" x="178" y="0" width="67" height="19"/>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noriginalcursummny}.setScale(2,BigDecimal.ROUND_DOWN)]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="f0a247de-2b5d-4887-9f3d-8ac1e3d160d2" x="0" y="19" width="365" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6b738e09-8805-41c7-859c-df00868c0357" x="283" y="0" width="106" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{frownote}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="24faa107-1b0a-4af1-9198-3dad2e797a49" x="275" y="0" width="5" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["┆"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="22">
+			<textField>
+				<reportElement uuid="0bfae2c9-d666-4326-8cbb-f103dc3697dd" x="0" y="1" width="72" height="18"/>
+				<textElement textAlignment="Right">
+					<font size="12" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["合        计"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00">
+				<reportElement uuid="6f96f2ab-4d98-40e7-b989-e2b2bd53c86e" x="159" y="0" width="86" height="19"/>
+				<textElement textAlignment="Right">
+					<font size="12" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{s_nmoney}.setScale(2,BigDecimal.ROUND_DOWN)]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00">
+				<reportElement uuid="642f4b11-6f39-4da6-9dd5-242884603154" x="248" y="0" width="54" height="19"/>
+				<textElement textAlignment="Right">
+					<font size="12" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{s_fnumber}.setScale(1,BigDecimal.ROUND_DOWN)+"箱"]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="ce7cf605-71bf-4e50-8b7b-0b1bb39f167a" x="0" y="21" width="365" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement uuid="ea31d82a-4ed8-4ff5-affe-24d70aab79b7" x="74" y="0" width="62" height="19"/>
+				<textElement textAlignment="Right">
+					<font size="12" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{s_nnumber2}.setScale(1,BigDecimal.ROUND_DOWN)+"包"]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

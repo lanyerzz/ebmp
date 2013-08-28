@@ -1,0 +1,1 @@
+binding.getVariable('data')

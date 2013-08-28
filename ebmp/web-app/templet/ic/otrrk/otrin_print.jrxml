@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="otrin_print" language="groovy" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="6534b74c-d7e0-4a06-88f3-3074aa6fcbb7">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["F:\\wms-workspace\\ebmp\\web-app\\templet\\ic\\otrrk\\"]]></defaultValueExpression>
+	</parameter>
+	<field name="dbillDate" class="java.util.Date"/>
+	<field name="genneralbodys" class="java.util.Collection"/>
+	<field name="cwarehouse" class="java.lang.Object"/>
+	<field name="cprovider" class="java.lang.Object"/>
+	<field name="jobbasfil" class="java.lang.Object"/>
+	<field name="purchaser" class="java.lang.Object"/>
+	<title>
+		<band height="50">
+			<staticText>
+				<reportElement uuid="1afbdad8-4a84-408d-badc-03efe078ee63" x="248" y="13" width="102" height="37"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[其他入库]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="34" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d2a6fbc0-4012-475a-a669-33931e2ca5d7" x="91" y="14" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{cprovider}.pkCubasdoc.custname?:""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="694549e4-0d21-4c77-bfd3-9d81b1fae957" x="299" y="14" width="73" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{jobbasfil}.jobName?:""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b04f49e6-bf62-4e16-b23f-cdf1c73e7ff3" x="466" y="14" width="74" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dbillDate}.format("yyyy-MM-dd")]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a8b0a9ec-d499-4fc4-9fa0-5a7381ce0998" x="53" y="14" width="38" height="20"/>
+				<textElement/>
+				<text><![CDATA[供应商:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3782a865-c452-4765-a4df-78ffce1256bf" x="255" y="14" width="43" height="20"/>
+				<textElement/>
+				<text><![CDATA[项目档案:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="05fe7e85-5671-48d0-8f59-5e59921e684e" x="421" y="14" width="45" height="20"/>
+				<textElement/>
+				<text><![CDATA[单据日期:]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="37">
+			<staticText>
+				<reportElement uuid="75962b41-8c38-4611-aed5-c51e2648bf87" x="248" y="17" width="50" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[存货分类]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7ad8c05a-fa44-4b9f-b629-b99f18b6c601" x="36" y="17" width="57" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[存货编码]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="39e7461d-9714-4418-9815-3662e338807b" x="298" y="17" width="39" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[主计量单位]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e641bbb2-9af6-4b86-9128-4978106b3756" x="207" y="17" width="41" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[型号]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4ebcaa64-96aa-4f28-886f-75cf45c59e59" x="486" y="17" width="72" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[备注]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="121d7de7-6928-4780-879f-8e016c71e01d" x="337" y="17" width="37" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[应入数量]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="94ef639b-5d1b-4eb4-b611-7671b9aa0932" x="374" y="17" width="36" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[实入数量]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="48f9c100-0806-4500-8532-74feb3a80c4a" x="169" y="17" width="38" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[规格]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ec4a7cdb-1baa-4b71-a30f-13e448a40c2b" x="93" y="17" width="76" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[存货名称]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="355d9b6c-1404-4038-96fe-d7196cc44c9b" x="410" y="17" width="76" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[入库时间]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="192" splitType="Stretch">
+			<subreport>
+				<reportElement uuid="724bf453-105f-4e60-accb-32865cba2e70" x="0" y="0" width="595" height="192"/>
+				<subreportParameter name="cwarehouse">
+					<subreportParameterExpression><![CDATA[$F{cwarehouse}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{genneralbodys})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR}+"otrin_print_body.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="31" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="aeb0397a-c06e-471b-8acf-f722fbdb1e4f" x="91" y="0" width="76" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{purchaser}.userRealName?:""]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="6e70fb22-66f0-4674-a35e-3a7152d59b6c" x="54" y="0" width="37" height="20"/>
+				<textElement/>
+				<text><![CDATA[采购人:]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,39 @@
+//created on: 2012-10-6
+package com.app.script.chg
+
+//list any import classes here.
+import com.app.domain.ic.inventoryadjust.IcWarehousetsfHead
+import com.app.domain.ic.inventoryadjust.IcWarehousetsfBody
+import com.app.domain.ic.bill.IcGeneralHead
+import com.app.domain.ic.bill.IcGeneralBody
+
+
+//declare any global variables here
+
+
+
+//系统规则  请勿修改
+rule "default"
+	salience=100 //规则级别
+	dialect "java" 
+    when
+       eval( true )//条件（全部）
+    then
+      //对数据进行交换处理
+      source:IcWarehousetsfHead//转库单
+      IcGeneralHead target=new IcGeneralHead()//出库单
+      
+      target.
+
+end
+
+//自定义规则
+rule "my rule"
+    //include attributes such as "salience" here...
+    enabled true//未启用
+    when
+        //conditions
+    then
+        //actions
+
+end

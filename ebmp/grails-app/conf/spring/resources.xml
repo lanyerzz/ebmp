@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="  
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="org.postgresql.Driver" />
+		<property name="url" value="jdbc:postgresql://localhost:5432/ebmp" />
+		<property name="username" value="postgres" />
+		<property name="password" value="123123a" />
+	</bean>
+	<!-- <bean id="dataSource_dcs" class="org.apache.commons.dbcp.BasicDataSource" 
+		destroy-method="close"> <property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" 
+		/> <property name="url" value="jdbc:sqlserver://192.168.56.102:1433;database=hc" 
+		/> <property name="username" value="sa" /> <property name="password" value="123456" 
+		/> </bean> -->
+	<!--<bean id="processEngineConfiguration" class="org.activiti.spring.SpringProcessEngineConfiguration">
+		<property name="dataSource" ref="dataSource" />
+		<property name="transactionManager" ref="transactionManager" />
+		<property name="databaseSchemaUpdate" value="true" />
+		<property name="jobExecutorActivate" value="false" />
+		<property name="deploymentResources" value="classpath*:/bpmn/**/autodeploy.*.bpmn20.xml" />
+		<property name="history" value="audit"/>
+		<property name="mailServerHost" value="smtp.163.com"/>
+		<property name="mailServerPort" value="25"/>
+		<property name="mailServerUsername" value="lanyerzz"/>
+		<property name="mailServerPassword" value="xinabcdli"/>
+		<property name="mailServerDefaultFrom" value="lanyerzz@163.com"/>
+
+	</bean>
+	<bean id="processEngine" class="org.activiti.spring.ProcessEngineFactoryBean">
+		<property name="processEngineConfiguration" ref="processEngineConfiguration" />
+	</bean>
+	<bean id="repositoryService" factory-bean="processEngine"
+		factory-method="getRepositoryService" />
+	<bean id="runtimeService" factory-bean="processEngine"
+		factory-method="getRuntimeService" />
+	<bean id="taskService" factory-bean="processEngine"
+		factory-method="getTaskService" />
+	<bean id="historyService" factory-bean="processEngine"
+		factory-method="getHistoryService" />
+	<bean id="managementService" factory-bean="processEngine"
+		factory-method="getManagementService" />
+	<bean id="activitiRule" class="org.activiti.engine.test.ActivitiRule">
+		<property name="processEngine" ref="processEngine" />
+	</bean>
+	
+	<bean id="identityService" factory-bean="processEngine" factory-method="getIdentityService" />
+-->
+</beans> 

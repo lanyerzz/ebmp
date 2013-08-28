@@ -1,0 +1,25 @@
+<APPLET  name='fileWritePlugin' CODE = 'com.app.applet.file.FileWriter.class' ARCHIVE = 'fileWritePlugin.jar' WIDTH = '10' HEIGHT = '10'>
+
+</APPLET><a href="#" onclick="document.fileWritePlugin.write('fdsafdsafdsafdsa','/Users/lanyer/workspace/test.txt',true)">fdfsafdsafdasfdsafsafas</a>
+
+<PARAM NAME = 'CODEBASE' VALUE =''>
+jarsigner -verbose -keystore ebmp.store  fileWritePlugin.jar ebmp
+
+
+keytool -genkey -dname "cn=BeanSoft Studio, ou=Java Software, o=BeanSoft Studio, c=China" -alias ebmp -keypass 123123a -storepass 123123a  -validity 3650 -keystore ebmp.store -keyalg RSA
+
+
+
+
+keytool -export -keystore ebmp.store -storepass 123123a -file ebmp.cer -alias ebmp
+
+
+
+
+
+keytool -genkeypair -alias ebmp -keyalg RSA -keysize 1024 -keypass 123123a -keystore ebmp.store -storepass 123123a -validity 3650
+jarsigner -keystore ebmp.store -storepass 123123a -keypass 123123a fileWritePlugin.jar  ebmp
+
+
+keytool -genkey -keyalg RSA -alias ebmp -keystore ebmp.store -storepass 123123a -validity 3650 -keysize 2048
+

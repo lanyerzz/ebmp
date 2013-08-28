@@ -1,0 +1,12 @@
+<project name="fileWritePlugin" default="jar">
+<property name="pluginDir" location="../../../../../../web-app/applet/fileWritePlugin.jar"></property>
+<property name="classDir" location="../../../../../../target/classes/"></property>
+<target name="jar" >
+    <delete file="${pluginDir}"></delete>
+    <jar destfile="${pluginDir}" basedir="${classDir}" includes="**/applet/file/**/*.class" >
+    </jar>
+    <exec command="jarsigner -keystore ../../../../../../web-app/applet/ebmp.store -storepass 123123a  ../../../../../../web-app/applet/fileWritePlugin.jar ebmp">
+
+    </exec>
+</target>
+</project>

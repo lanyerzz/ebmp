@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="posprint" language="groovy" pageWidth="421" pageHeight="595" columnWidth="365" leftMargin="28" rightMargin="28" topMargin="28" bottomMargin="28" isSummaryWithPageHeaderAndFooter="true" uuid="e7682bbf-cd66-4496-828d-2b649df7788b">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="98"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="attached" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[attached]]></fieldDescription>
+	</field>
+	<field name="balatype" class="com.app.bd.balatype.BdBalatype">
+		<fieldDescription><![CDATA[balatype]]></fieldDescription>
+	</field>
+	<field name="bclose" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bclose]]></fieldDescription>
+	</field>
+	<field name="bdCorp" class="com.app.bd.corp.BdCorp">
+		<fieldDescription><![CDATA[bdCorp]]></fieldDescription>
+	</field>
+	<field name="bdSalestru" class="com.app.bd.salestru.BdSalestru">
+		<fieldDescription><![CDATA[bdSalestru]]></fieldDescription>
+	</field>
+	<field name="billTypeCode" class="java.lang.String">
+		<fieldDescription><![CDATA[billTypeCode]]></fieldDescription>
+	</field>
+	<field name="billdate" class="java.util.Date">
+		<fieldDescription><![CDATA[billdate]]></fieldDescription>
+	</field>
+	<field name="billno" class="java.lang.String">
+		<fieldDescription><![CDATA[billno]]></fieldDescription>
+	</field>
+	<field name="billtype" class="com.app.pub.billtype.PubBilltype">
+		<fieldDescription><![CDATA[billtype]]></fieldDescription>
+	</field>
+	<field name="bodys" class="java.util.Set">
+		<fieldDescription><![CDATA[bodys]]></fieldDescription>
+	</field>
+	<field name="bretinvflag" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[bretinvflag]]></fieldDescription>
+	</field>
+	<field name="businessType" class="com.app.pub.businesstype.PubBusinessType">
+		<fieldDescription><![CDATA[businessType]]></fieldDescription>
+	</field>
+	<field name="calbody" class="com.app.bd.calbody.BdCalbody">
+		<fieldDescription><![CDATA[calbody]]></fieldDescription>
+	</field>
+	<field name="checkDate" class="java.util.Date">
+		<fieldDescription><![CDATA[checkDate]]></fieldDescription>
+	</field>
+	<field name="checker" class="com.app.sm.user.SmUser">
+		<fieldDescription><![CDATA[checker]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="currencytype" class="com.app.bd.currtype.BdCurrtype">
+		<fieldDescription><![CDATA[currencytype]]></fieldDescription>
+	</field>
+	<field name="customer" class="com.app.bd.cumandoc.BdCumandoc">
+		<fieldDescription><![CDATA[customer]]></fieldDescription>
+	</field>
+	<field name="dateCreated" class="java.util.Date">
+		<fieldDescription><![CDATA[dateCreated]]></fieldDescription>
+	</field>
+	<field name="deptdoc" class="com.app.bd.deptdoc.BdDeptdoc">
+		<fieldDescription><![CDATA[deptdoc]]></fieldDescription>
+	</field>
+	<field name="errors" class="org.springframework.validation.Errors">
+		<fieldDescription><![CDATA[errors]]></fieldDescription>
+	</field>
+	<field name="hxje" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[hxje]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="lastUpdated" class="java.util.Date">
+		<fieldDescription><![CDATA[lastUpdated]]></fieldDescription>
+	</field>
+	<field name="linkTel" class="java.lang.String">
+		<fieldDescription><![CDATA[linkTel]]></fieldDescription>
+	</field>
+	<field name="makeDate" class="java.util.Date">
+		<fieldDescription><![CDATA[makeDate]]></fieldDescription>
+	</field>
+	<field name="maker" class="com.app.sm.user.SmUser">
+		<fieldDescription><![CDATA[maker]]></fieldDescription>
+	</field>
+	<field name="metaClass" class="groovy.lang.MetaClass">
+		<fieldDescription><![CDATA[metaClass]]></fieldDescription>
+	</field>
+	<field name="ndiscountrate" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[ndiscountrate]]></fieldDescription>
+	</field>
+	<field name="nexchangeotobrate" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[nexchangeotobrate]]></fieldDescription>
+	</field>
+	<field name="nheadsummny" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[nheadsummny]]></fieldDescription>
+	</field>
+	<field name="npreceivemny" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[npreceivemny]]></fieldDescription>
+	</field>
+	<field name="nratemnny" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[nratemnny]]></fieldDescription>
+	</field>
+	<field name="nrecmnny" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[nrecmnny]]></fieldDescription>
+	</field>
+	<field name="properties" class="java.util.Map">
+		<fieldDescription><![CDATA[properties]]></fieldDescription>
+	</field>
+	<field name="psndoc" class="com.app.bd.psndoc.BdPsndoc">
+		<fieldDescription><![CDATA[psndoc]]></fieldDescription>
+	</field>
+	<field name="sourceBillType" class="com.app.pub.billtype.PubBilltype">
+		<fieldDescription><![CDATA[sourceBillType]]></fieldDescription>
+	</field>
+	<field name="sourceBillTypeCode" class="java.lang.String">
+		<fieldDescription><![CDATA[sourceBillTypeCode]]></fieldDescription>
+	</field>
+	<field name="stordoc" class="com.app.bd.stordoc.BdStordoc">
+		<fieldDescription><![CDATA[stordoc]]></fieldDescription>
+	</field>
+	<field name="upMessage" class="java.lang.String">
+		<fieldDescription><![CDATA[upMessage]]></fieldDescription>
+	</field>
+	<field name="up_date" class="java.util.Date">
+		<fieldDescription><![CDATA[up_date]]></fieldDescription>
+	</field>
+	<field name="upstate" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[upstate]]></fieldDescription>
+	</field>
+	<field name="version" class="java.lang.Long">
+		<fieldDescription><![CDATA[version]]></fieldDescription>
+	</field>
+	<field name="vnote" class="java.lang.String">
+		<fieldDescription><![CDATA[vnote]]></fieldDescription>
+	</field>
+	<field name="vreceiveaddress" class="java.lang.String">
+		<fieldDescription><![CDATA[vreceiveaddress]]></fieldDescription>
+	</field>
+	<title>
+		<band height="96">
+			<staticText>
+				<reportElement uuid="9ab4a841-78f0-4ca6-8640-513e82e18666" x="212" y="53" width="48" height="19"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<text><![CDATA[单据号:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9b90bb2a-6b6d-4dcb-b83f-c503ca6e9e0e" x="0" y="74" width="31" height="19"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[客户:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="cc4d6f2f-87e9-471c-ac4b-8c9f386efe58" x="31" y="74" width="207" height="19"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Justified">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{customer}.pkCubasdoc.custname]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4adc0825-f03b-4019-bfc3-61e08137b4f4" x="261" y="53" width="102" height="19"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{billno}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="acc0bee3-b73c-498d-a600-1f9846d093fc" x="114" y="28" width="135" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="16" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[发货清单]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="c9cf6289-0923-47ab-90e6-7314439cef49" x="30" y="54" width="83" height="19"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{billdate}.format("yyyy-MM-dd")]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement uuid="919a22d5-6e41-4b88-af2f-ead40c590106" x="113" y="54" width="39" height="19"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="bf5898d0-e438-4c52-90e5-fb00ad91abdf" x="260" y="34" width="105" height="19"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="70b95051-53a8-421e-8382-15f13a866630" x="-1" y="54" width="31" height="19"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[日期:]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<subreport runToBottom="false">
+				<reportElement uuid="8c2301ec-ef5b-4a4b-baa0-84ac4ef13a68" x="0" y="2" width="365" height="25"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{bodys})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR}+"/Sub_小票打印.jasper"]]></subreportExpression>
+			</subreport>
+			<staticText>
+				<reportElement uuid="4ef577e4-243f-405c-9eac-ed249762a08f" x="248" y="-22" width="38" height="19"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[币种:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="0f260de3-b784-43f6-bea4-2108bc2cfb6e" x="317" y="-22" width="46" height="19"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{currencytype}.getCurrtypename()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement uuid="6aa9fd28-9531-414b-8970-3f4c19bba07d" x="286" y="-22" width="31" height="19"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{currencytype}.getCurrtypecode()]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="21" splitType="Prevent">
+			<textField pattern="#,##0.00">
+				<reportElement uuid="6fc90422-d83b-4253-8ef5-f57e98c89b84" x="44" y="3" width="82" height="18"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0" lineStyle="Double"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true" isUnderline="true"/>
+					<paragraph rightIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nrecmnny}.setScale(2,BigDecimal.ROUND_DOWN)]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="593f385b-9f8e-4b31-88ab-1cf4efd29e71" x="5" y="3" width="39" height="18"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[应收]]></text>
+			</staticText>
+			<textField pattern="#,##0.00">
+				<reportElement uuid="b6cf3f16-02aa-4b79-8f2a-4d69da0d795a" x="200" y="3" width="86" height="18"/>
+				<box leftPadding="0">
+					<pen lineWidth="0.0" lineStyle="Double"/>
+					<topPen lineWidth="0.0" lineStyle="Double"/>
+					<leftPen lineWidth="0.0" lineStyle="Double"/>
+					<bottomPen lineWidth="0.0" lineStyle="Double"/>
+					<rightPen lineWidth="1.0" lineStyle="Double"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+					<paragraph rightIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nratemnny}.setScale(2,BigDecimal.ROUND_DOWN)]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="16">
+			<textField evaluationTime="Report">
+				<reportElement uuid="e7ad4889-4d82-4ba0-ba1e-f839bd950e70" x="329" y="1" width="40" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f7f19b81-b5b5-4b75-8dcf-7143c0450c82" x="248" y="1" width="80" height="14"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="18">
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="55bc9a59-124e-4bb9-ae49-abbf0ba5fbce" x="31" y="0" width="298" height="17"/>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{vnote}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8429864f-a14e-478c-b460-8c8ddfb8f5bb" x="0" y="0" width="31" height="18"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[备注:]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="wt_print" language="groovy" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f478eb18-a729-460a-822f-b398861f3c35">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["F:\\wms-workspace\\wms\\web-app\\templet\\ic\\zkd\\"]]></defaultValueExpression>
+	</parameter>
+	<field name="inWarehouse.storname" class="java.lang.String"/>
+	<field name="outWarehouse.storname" class="java.lang.String"/>
+	<field name="corp.unitName" class="java.lang.String"/>
+	<field name="billNo" class="java.lang.String"/>
+	<field name="warehousetsfbodys" class="java.util.Collection"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="d47c0d16-f2bd-4a19-9448-ece82a4390be" x="261" y="16" width="83" height="43"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[转库单]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ddbacdbe-b3c9-4ff7-b0c1-68c88f700fe0" x="92" y="15" width="76" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{billNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="54b93b82-7b8c-4b1c-9ec9-d40f2cc665a8" x="55" y="15" width="37" height="20"/>
+				<textElement markup="none"/>
+				<text><![CDATA[单据号:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4985f4ef-0b71-4d91-ba2f-fbbf51f83c4a" x="186" y="15" width="47" height="20"/>
+				<textElement markup="none"/>
+				<text><![CDATA[出库仓库:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9357e57f-2b22-4afd-9c73-a36eff3a26f9" x="324" y="15" width="43" height="20"/>
+				<textElement markup="none"/>
+				<text><![CDATA[入库仓库:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b3d387d5-42ae-4aa2-b97a-a5cfb77529d4" x="461" y="15" width="32" height="20"/>
+				<textElement markup="none"/>
+				<text><![CDATA[公司:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f2f58f20-0560-4d4f-b3e8-6e2c39d983ca" x="367" y="15" width="48" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{inWarehouse.storname}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="19e2d60e-a67b-4031-bced-42c9efa34792" x="493" y="15" width="56" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{corp.unitName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="4bcd310b-6447-4492-831c-db72dddb2d51" x="233" y="15" width="56" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{outWarehouse.storname}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="37" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="69f41cc9-7ff5-460a-952c-38c29dfa6e5d" x="45" y="17" width="82" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" markup="none"/>
+				<text><![CDATA[存货编码]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6a249876-30e8-45af-9481-726ae3996a09" x="127" y="17" width="77" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" markup="none"/>
+				<text><![CDATA[存货名称]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="10dab26d-2032-4f34-bf02-8c43f39cf3eb" x="481" y="17" width="69" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" markup="none"/>
+				<text><![CDATA[行备注]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fad7ebb5-465e-403b-bfe6-927c58b10bd3" x="421" y="17" width="60" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" markup="none"/>
+				<text><![CDATA[数量]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="93cfa69a-4358-41f5-bd5e-8455110ae1b2" x="385" y="17" width="36" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" markup="none"/>
+				<text><![CDATA[主计量单位]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="39d1f280-38a0-43dd-9905-44da16cbe7af" x="324" y="17" width="61" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" markup="none"/>
+				<text><![CDATA[批次号]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="be3aedc0-f4cc-42ab-aa7a-309d088bb9c8" x="261" y="17" width="63" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" markup="none"/>
+				<text><![CDATA[型号]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5aa58454-6afa-4c73-881b-093ac1be83ed" x="204" y="17" width="57" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" markup="none"/>
+				<text><![CDATA[规格]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="194" splitType="Stretch">
+			<subreport>
+				<reportElement uuid="76964335-37b5-4174-b51a-317ee4bc5d80" x="0" y="0" width="595" height="194"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{warehousetsfbodys})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "wt_print_body.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

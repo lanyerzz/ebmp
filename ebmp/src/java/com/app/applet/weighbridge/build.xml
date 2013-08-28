@@ -1,0 +1,12 @@
+<project name="commPlugin" default="jar">
+<property name="pluginDir" location="../../../../../../web-app/applet/commPlugin.jar"></property>
+<property name="classDir" location="../../../../../../target/classes/"></property>
+<target name="jar" >
+    <delete file="${pluginDir}"></delete>
+    <jar destfile="${pluginDir}" basedir="${classDir}" includes="**/applet/weighbridge/**/*.class" >
+    </jar>
+    <exec command="jarsigner -keystore ../../../../../../web-app/applet/ebmp.store -storepass 123123a  ${pluginDir} ebmp">
+
+    </exec>
+</target>
+</project>

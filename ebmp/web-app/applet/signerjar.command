@@ -1,0 +1,10 @@
+jarsigner -keystore /Users/lanyer/git/ebmp/ebmp/web-app/applet/ebmp.store -storepass 123123a   /Users/lanyer/git/ebmp/ebmp/web-app/applet/jasperreports-5.1.0.jar  ebmp
+jarsigner -keystore /Users/lanyer/git/ebmp/ebmp/web-app/applet/ebmp.store -storepass 123123a   /Users/lanyer/git/ebmp/ebmp/web-app/applet/jasperreports-applet-5.1.0.jar  ebmp
+jarsigner -keystore /Users/lanyer/git/ebmp/ebmp/web-app/applet/ebmp.store -storepass 123123a  /Users/lanyer/git/ebmp/ebmp/web-app/applet/commPlugin.jar ebmp
+jarsigner -keystore /Users/lanyer/git/ebmp/ebmp/web-app/applet/ebmp.store -storepass 123123a  /Users/lanyer/git/ebmp/ebmp/web-app/applet/jreprint.jar ebmp
+jarsigner -keystore /Users/lanyer/git/ebmp/ebmp/web-app/applet/ebmp.store -storepass 123123a  /Users/lanyer/git/ebmp/ebmp/web-app/applet/fileWritePlugin.jar  ebmp
+jarsigner -keystore /Users/lanyer/git/ebmp/ebmp/web-app/applet/ebmp.store -storepass 123123a  /Users/lanyer/git/ebmp/ebmp/web-app/applet/RXTXcomm.jar ebmp
+jarsigner -keystore /Users/lanyer/git/ebmp/ebmp/web-app/applet/ebmp.store -storepass 123123a  /Users/lanyer/git/ebmp/ebmp/web-app/applet/commons-collections-2.1.1.jar  ebmp
+jarsigner -keystore /Users/lanyer/git/ebmp/ebmp/web-app/applet/ebmp.store -storepass 123123a   /Users/lanyer/git/ebmp/ebmp/web-app/applet/commons-digester-2.1.jar  ebmp
+jarsigner -keystore /Users/lanyer/git/ebmp/ebmp/web-app/applet/ebmp.store -storepass 123123a   /Users/lanyer/git/ebmp/ebmp/web-app/applet/commons-logging-1.1.1.jar  ebmp
+jarsigner -keystore /Users/lanyer/git/ebmp/ebmp/web-app/applet/ebmp.store -storepass 123123a   /Users/lanyer/git/ebmp/ebmp/web-app/applet/iText-2.1.7.jar  ebmp
