@@ -7,7 +7,7 @@ import org.apache.commons.lang.StringUtils
 
 class PosIcBalanceService {
 
-
+    static expose = ['cxf']
 
     public BigDecimal queryStorShuLiang(String storId, String invmanid,
                                         String corpId,String zhuangShuId) throws BusinessException {

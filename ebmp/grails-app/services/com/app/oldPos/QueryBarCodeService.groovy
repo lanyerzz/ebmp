@@ -5,7 +5,7 @@ import com.app.bd.invbasdoc.BdInvbasdoc
 import com.app.bd.invmandoc.BdInvmandoc
 import com.app.exception.BusinessException
 class QueryBarCodeService {
-
+    static expose = ['cxf']
 
     public Bar queryBarInfo(String corpid,String barCode) {
 

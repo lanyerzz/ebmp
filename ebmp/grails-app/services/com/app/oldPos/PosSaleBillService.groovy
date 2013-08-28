@@ -21,7 +21,7 @@ import grails.converters.JSON
 
 class PosSaleBillService {
     def soSaleService
-
+    static expose = ['cxf']
 
     public SaleBillResultDto insert_REQUIRED(SaleBillResultDto dto)			throws BusinessException {
         //dto.getHeader().setVbilldate(myapp.core.date.Calendar.getDate());

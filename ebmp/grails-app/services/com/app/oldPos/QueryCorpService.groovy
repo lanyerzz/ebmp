@@ -8,7 +8,7 @@ import javax.jws.WebResult
 
 
 class QueryCorpService {
-
+    static expose = ['cxf']
 
 
     public CorpDTO[] queryCorp(){

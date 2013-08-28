@@ -6,7 +6,7 @@ import com.app.bd.cumandoc.BdCumandoc
 import com.app.exception.BusinessException
 
 class QueryCustomerService {
-
+    static expose = ['cxf']
 
 
     public CustomerDto[] queryFuzzy(String corpID, String v, Boolean custFlag)

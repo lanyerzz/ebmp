@@ -5,7 +5,7 @@ import com.app.exception.BusinessException
 import org.apache.commons.lang.StringUtils
 
 class BdUnitService {
-
+    static expose = ['cxf']
     /**
      * 根据公司PK查询计量单位数据
      * @param corp 公司PK

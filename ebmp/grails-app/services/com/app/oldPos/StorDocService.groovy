@@ -5,7 +5,7 @@ import com.app.exception.BusinessException
 
 class StorDocService {
 
-
+    static expose = ['cxf']
 
     public BDStorDocDto[] queryByCode(String code, String corpid)
     throws BusinessException {

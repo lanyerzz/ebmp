@@ -4,7 +4,7 @@ import com.app.bd.pack.BdPack
 import com.app.exception.BusinessException
 
 class PosBDDefService {
-
+    static expose = ['cxf']
 
 
     private BdDefDocDto[] query(String listCode) throws BusinessException {

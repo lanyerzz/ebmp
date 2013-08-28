@@ -11,7 +11,7 @@ import com.app.sm.user.SmUser
 class PosLoginService {
 
     def springSecurityService
-
+    static expose = ['cxf']
 
 
 

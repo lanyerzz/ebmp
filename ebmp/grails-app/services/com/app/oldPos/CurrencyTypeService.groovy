@@ -6,7 +6,7 @@ import org.apache.commons.lang.StringUtils
 
 class CurrencyTypeService {
 
-
+    static expose = ['cxf']
 
 
     public CurrencyTypeDto[] query() throws BusinessException {
